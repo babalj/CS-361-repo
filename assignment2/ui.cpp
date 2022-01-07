@@ -6,9 +6,9 @@
 #include <string>
 
 
-#include <bits/stdc++.h>
+ 
 
-using namespace std;
+using namespace std; 
 
 char input_valid(char);
 
@@ -17,6 +17,7 @@ int main() {
     char input;
     int num = 0;
     fstream prng, image;
+    string path;
 
     cout << "Enter t: ";
     input = input_valid(input); // enterface 
@@ -57,6 +58,11 @@ int main() {
     system(command2); // compiling num_generator file
     cout << "\nRunning file " << endl;
     system("./image"); // executing file
+
+    image.open("image_service.txt", ios::in | ios::out);
+    image >> path;
+
+    cout << path << endl;
 
 
 

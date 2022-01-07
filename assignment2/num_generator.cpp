@@ -5,8 +5,8 @@
 #include <fstream>
 #include <cstdlib>
 
-
-using namespace std;
+ 
+using namespace std; 
 
 
 int main() {
