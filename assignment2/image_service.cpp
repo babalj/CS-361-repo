@@ -26,13 +26,13 @@ int main() {
     vector <string> file_paths;
     string path = "./images";
     for (const auto & entry : fs::directory_iterator(path)) {
-        cout << entry.path() << endl;
+        //cout << entry.path() << endl;
         file_paths.push_back(entry.path());
     }   
 
 
     photo = "/Users/josephbabal/Desktop/Winter_2022/cs_361/software_engr_I/assignments/CS-361-repo/assignment2/"+ file_paths[num];
-    cout << photo << endl;
+    //cout << photo << endl;
 
     
 
