@@ -12,9 +12,15 @@ using namespace std;
 int main() {
     srand(time(NULL));
 
+    string input;
     int rand_num = rand() % 5;
 
     fstream file;
+
+    file.open("prng_service.txt", ios::in | ios::out);
+    file >> input;
+    file.close();
+
 
     file.open("prng_service.txt", ios::out | ios::trunc);
     cout << "inserting random number\n";
