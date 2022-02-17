@@ -13,7 +13,6 @@ using namespace std;
 char input_valid(char);
 
 int main() {
-
     char input;
     int num = 0;
     fstream prng, image;
